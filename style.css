@@ -87,7 +87,7 @@ hr {
 .header-container {
 	/* opacity: 0.75; */
 	height: 50rem;
-	background-image: url(/images/header-bkgd-comp.jpg);
+	background-image: url(images/headerbkgd.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
