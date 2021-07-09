@@ -1,0 +1,191 @@
+/* PROPERTIES -  background, color, font-family, font-size, height, margin, padding, text-align
+
+Styled links using pseudo-classes
+*/
+
+/* General Settings */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700&display=swap");
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: "Noto Sans JP", sans-serif;
+	min-height: 100;
+}
+
+body {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Navigation */
+nav {
+	background-color: white;
+	margin: 2rem 2rem 2rem 2rem;
+}
+
+.nav__links {
+	display: flex;
+	list-style: none;
+	text-decoration: none;
+	align-items: center;
+}
+
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+	color: #3d4449;
+	display: inline-block;
+	padding: 1rem 3rem;
+	font-size: 1.7rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 1rem;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn:hover {
+	color: lightslategrey;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+	transform: translateY(-2px);
+}
+
+.icon-small {
+	font-size: 200%;
+	color: #3d4449;
+}
+
+.ion-social-linkedin:hover {
+	color: #3b5998;
+}
+
+.ion-social-github:hover {
+	color: #e67e22;
+}
+
+hr {
+	height: 5px;
+	background-color: lightslategrey;
+	border: none;
+}
+
+/* Header Container */
+
+/*Photo by Alesia Kazantceva Unsplash</a>
+   */
+.header-container {
+	/* opacity: 0.75; */
+	height: 50rem;
+	background-image: url(/images/header-bkgd-comp.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+header {
+	/* background-color: #3d4449a4; */
+	margin-top: 10rem;
+	/* margin-left: 20rem; */
+	display: inline-block;
+	text-align: center;
+	background-color: rgba(233, 228, 228, 0.493);
+}
+
+h1 {
+	color: black;
+	/* color: rgb(204, 202, 202); */
+	font-size: 8rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	margin-bottom: 1rem;
+}
+
+.header-desc {
+	/* color: rgb(204, 202, 202); */
+	font-size: 3rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+	/* display: inline-block; */
+	margin-left: 1rem;
+}
+
+/* Main Sections*/
+main {
+	background-color: rgb(204, 202, 202);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.headshot {
+	width: 20rem;
+	height: auto;
+	margin-top: 7rem;
+}
+
+section {
+	/* background-color: lightsalmon; */
+	margin-top: 5rem;
+	/* text-align: center; */
+	/* margin: 2rem 2rem; */
+	max-width: 90rem;
+}
+
+h2 {
+	font-size: 4rem;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+p {
+	font-size: 1.8rem;
+	margin-bottom: 1.2rem;
+}
+
+li {
+	list-style: none;
+	font-size: 1.5rem;
+}
+
+.about {
+	/* align-content: center; */
+	margin: 0 3rem;
+	align-items: center;
+	text-align: center;
+}
+
+.contact {
+	text-align: center;
+}
+
+.connect {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+/* Footer */
+footer {
+	font-size: 1.5rem;
+	color: #eee;
+	background-color: lightslategrey;
+	/* position: absolute; */
+	text-align: center;
+	width: 100%;
+	bottom: 0;
+	height: 7rem;
+}
