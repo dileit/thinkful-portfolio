@@ -84,10 +84,11 @@ hr {
 
 /*Photo by Alesia Kazantceva Unsplash</a>
    */
+
 .header-container {
 	/* opacity: 0.75; */
 	height: 50rem;
-	background-image: url(images/headerbkgd.jpg);
+	background-image: url(images/headerbkgd.JPG);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
