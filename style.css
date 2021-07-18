@@ -62,8 +62,9 @@ input[type="submit"] {
 }
 
 .icon-small {
-	font-size: 200%;
+	/* font-size: 100%; */
 	color: #3d4449;
+	margin-left: 5px;
 }
 
 .ion-social-linkedin:hover {
@@ -76,7 +77,8 @@ input[type="submit"] {
 
 hr {
 	height: 5px;
-	background-color: lightslategrey;
+	/* background-color: lightslategrey; */
+	background-color: #4d5766;
 	border: none;
 }
 
@@ -162,7 +164,21 @@ li {
 	font-size: 1.5rem;
 }
 
-.about {
+.about-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	/* flex-wrap: wrap; */
+	flex-flow: column wrap;
+}
+
+.headshot {
+	/* border-radius: 50%; */
+	flex-grow: 0;
+}
+
+.about-article {
 	/* align-content: center; */
 	margin: 0 3rem;
 	align-items: center;
@@ -171,6 +187,7 @@ li {
 
 .contact {
 	text-align: center;
+	margin-bottom: 5rem;
 }
 
 .connect {
@@ -182,11 +199,16 @@ li {
 /* Footer */
 footer {
 	font-size: 1.5rem;
-	color: #eee;
-	background-color: lightslategrey;
+	color: #fff;
+	background-color: #4d5766;
+	/* background-color: lightslategrey; */
 	/* position: absolute; */
 	text-align: center;
 	width: 100%;
 	bottom: 0;
-	height: 7rem;
+	height: 12rem;
+}
+
+.footer-container {
+	margin-top: 3rem;
 }
